@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beauty barby - Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../CSS/home.css" />
+    <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+Display:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../../img/Logotyp_mini.png" />
+  </head>
+  <body class="body">
+    <!------------------------------Header----------------------------------------->
+    <div class="header">
+      <div class="logo">
+        <img class="logo_img" src="../../img/Logotyp_mini.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul class="no-bullets wrap menu_header">
+          <li><a href="../../index.html">Greetings</a></li>
+          <li>
+            <a href="../home/home.html"><i class="bx bx-home"></i></a>
+          </li>
+          <li><a href="../price/price.html">Prices</a></li>
+          <li><a href="../Description/">Description</a></li>
+          <li><a href="../aboutMe/AboutUs.html">About</a></li>
+
+          <li class="gosht"><a href="../contact/contact.html">contact</a></li>
+          <li class="shrinkedscreen">
+            <a href="../contact/contact.html">
+              <i class="bx bxs-contact"></i
+            ></a>
+          </li>
+        </ul>
+
+        <ul class="min_ecran">
+          <li>
+            <a href="#home"><i class="bx bx-home"></i></a>
+          </li>
+          <li>
+            <a href="../price/price.html"
+              ><i class="bx bx-purchase-tag-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a href="../Description/traitement.html"
+              ><i class="bx bx-photo-album"></i
+            ></a>
+          </li>
+          <li><a href="../aboutMe/AboutUs.html">About</a></li>
+          <li>
+            <a href="../contact/contact.html"><i class="bx bxs-contact"></i></a>
+          </li>
+        </ul>
+        <div class="menu_icon">
+          <i class="bx bx-menu bx-lg" id="menu-btn"></i>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Nav-bar----------------------------------------->
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="../../index.html" class="random">Greetings</a>
+      <a href="#home" class="random">Home</a>
+      <a href="../price/price.html" class="random">Prices</a>
+      <a href="../Description/traitement.html">Description</a>
+      <li><a href="../aboutMe/AboutUs.html">About</a></li>
+      <a href="../contact/contact.html">Contact</a>
+    </nav>
+
+    <!------------------------------Home----------------------------------------->
+    <section class="home" id="home">
+      <div class="slide active">
+        <div class="content">
+          <img class="round" src="../../img/content-img-1.png" alt="" />
+          <span>Happiness suits you!</span>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../../img/home-img-1.png" alt="" />
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <img
+            class="round"
+            src="https://images.unsplash.com/photo-1600523063811-4e78e3e088b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+            alt=""
+          />
+          <span>A healthy body is a bed and breakfast for the soul</span>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1600523063811-4e78e3e088b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img
+            class="round"
+            src="https://images.unsplash.com/photo-1591020330942-e9c3bce82096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+          <span>
+            The adventure with cosmetics begins with getting involved in
+            yourself yourself, look at your own needs.
+          </span>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1591020330942-e9c3bce82096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img
+            class="round"
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+          <span>Massage is a luxury you can afford!</span>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-------------------Category section-------------------->
+
+    <section class="category">
+      <a href="#" class="box">
+        <img src="../../img/category-1.png" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="../../img/category-2.png" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="../../img/category-3.png" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="../../img/category-4.png" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="../../img/category-5.png" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="../../img/category-6.png" alt="" />
+      </a>
+    </section>
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <h1>gallery</h1>
+        <p>Discover our photo collection - Browse our gallery</p>
+      </div>
+
+      <div class="lightbox">
+        <div class="gallery-box">
+          <a href="../../img/img-1.jpg"
+            ><img src="../../img/img-1.jpg" alt=""
+          /></a>
+        </div>
+        <div class="gallery-box">
+          <a href="../../img/img-2.jpg"
+            ><img src="../../img/img-2.jpg" alt=""
+          /></a>
+        </div>
+        <div class="gallery-box">
+          <a href="../../img/img-3.jpg"
+            ><img src="../../img/img-3.jpg" alt=""
+          /></a>
+        </div>
+        <div class="gallery-box">
+          <a href="../../img/img-4.JPG"
+            ><img src="../../img/img-4.JPG" alt=""
+          /></a>
+        </div>
+        <div class="gallery-box">
+          <a href="../../img/img-5.jpg"
+            ><img src="../../img/img-5.jpg" alt=""
+          /></a>
+        </div>
+        <div class="gallery-box">
+          <a href="../../img/img-6.jpg"
+            ><img src="../../img/img-6.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="content">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        <h3>
+          P Duis aute irure dolor in reprehenderitielęgnacja skóry robi różnicę
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sit
+          amet commodo nulla. Ornare aenean euismod elementum nisi quis
+          eleifend. A diam maecenas sed enim ut sem viverra ...
+        </p>
+        <a href="../Description/traitement.html" class="btn align-center"
+          >Read more</a
+        >
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- reviews section starts  -->
+    <section class="opinions">
+      <h1>Opinion</h1>
+
+      <div class="person activeC">
+        <div class="who">
+          <img src="../../img/person.png" alt="" />
+          <div class="idwho">
+            <h3>Elise Goku</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+
+      <div class="person">
+        <div class="who">
+          <img src="../../img/pic-2.png" alt="" />
+          <div class="idwho">
+            <h3>john deo</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa
+          aspernatur incidunt iusto veniam cumque error quaerat officia.
+          Aspernatur?
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+
+      <div class="person">
+        <div class="who">
+          <img src="../../img/pic-2.png" alt="" />
+          <div class="idwho">
+            <h3>john deo</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa
+          aspernatur incidunt iusto veniam cumque error quaerat officia.
+          Aspernatur?
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+
+      <div class="person">
+        <div class="who">
+          <img src="../../img/pic-3.png" alt="" />
+          <div class="idwho">
+            <h3>john deo</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa
+          aspernatur incidunt iusto veniam cumque error quaerat officia.
+          Aspernatur?
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+
+      <div class="person">
+        <div class="who">
+          <img src="../../img/pic-4.png" alt="" />
+          <div class="idwho">
+            <h3>john deo</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa
+          aspernatur incidunt iusto veniam cumque error quaerat officia.
+          Aspernatur?
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+
+      <div class="person">
+        <div class="who">
+          <img src="../../img/pic-5.png" alt="" />
+          <div class="idwho">
+            <h3>john deo</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="commentaire">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quis ipsa
+          aspernatur incidunt iusto veniam cumque error quaerat officia.
+          Aspernatur?
+        </p>
+
+        <div class="controlsComment">
+          <div
+            class="fas fa-angle-left ArrowComment"
+            onclick="prevComment()"
+          ></div>
+          <div
+            class="fas fa-angle-right ArrowComment"
+            onclick="nextComment()"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <a href="../contact/contact.html" target="_blank">
+      <h6>
+        <p>leave us a comment</p>
+
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </h6>
+    </a>
+
+    <!-- reviews section ends  -->
+
+    <section class="footer">
+      <div class="map">
+        <img class="logoFooter" src="../../img/Logotyp BB.png" alt="" />
+        <h3>Beauty Barby</h3>
+      </div>
+
+      <div class="boxFooter" id="contact">
+        <h3>contact info</h3>
+        <p>
+          <i class="fas fa-phone color"></i
+          ><a href="tel:+48451572604" class="brown"> 451-572-604</a>
+        </p>
+
+        <p>
+          <i class="fas fa-envelope color"></i>
+          <a href=""> jorammumb.mk@gmail.com</a>
+        </p>
+
+        <div class="shareFooter">
+          <a
+            href="https://www.facebook.com/Beuty-Bar-by-Ma%C5%82gorzata-Bartkowiak"
+            class="social fab fa-facebook-f"
+          ></a>
+
+          <a
+            href="https://www.instagram.com/beautybarbymalgob/"
+            class="social fab fa-instagram"
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit">
+      Design and Develop by <a href="https://github.com/Joki004">Joki</a>
+    </div>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="../../Javascript/home.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

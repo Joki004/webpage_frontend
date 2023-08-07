@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: "Noto Serif Display", serif, "Dancing Script", cursive, "Poppins",
+    sans-serif, "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  transition: all 0.5s linear;
+  text-decoration: none;
+}
+:root {
+  --firstbrown: #331e1d;
+  --seconfbrown: #976240;
+  --GOld: #f6e2ad;
+  --GoldOnline: #e4c05a;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--GoldOnline);
+}
+
+body,
+.body {
+  width: 99.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*--overflow-x: hidden;--*/
+  padding: 0;
+  gap: 7%;
+}
+/*-------------------Header-------------------------------*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+  height: 100%;
+  align-items: center;
+  background-color: var(--firstbrown);
+  padding: 1% 1.5% 1.5% 1.5%;
+
+  margin-right: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo_img {
+  width: 10%;
+  height: 100%;
+  background-color: var(--firstbrown);
+  border-radius: 5%;
+  border: var(--GoldOnline) solid;
+}
+
+.logo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.menu {
+  width: 80%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  padding: 2%;
+  gap: 8%;
+  font-size: 140%;
+}
+.min_ecran {
+  display: none;
+}
+.menu_header > li > a {
+  text-decoration: none;
+  color: white;
+}
+.menu_header > li {
+  padding: 0.5%;
+}
+
+.menu_header > li:hover {
+  border: solid 1px;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+/*----------------------nav-bar--------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -120%;
+  z-index: 1010;
+  height: 100%;
+  width: 85%;
+  background: url(../img/navbar-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-right: 15%;
+  text-transform: capitalize;
+}
+
+.navbar.active {
+  left: 0;
+}
+
+.navbar #close-navbar {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background: #fff;
+  color: var(--firstbrown);
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.navbar #close-navbar:hover {
+  color: var(--GoldOnline);
+  background: var(--firstbrown);
+}
+
+.navbar a {
+  font-size: 210%;
+  text-transform: uppercase;
+  color: var(--GoldOnline);
+  font-weight: lighter;
+}
+
+.navbar a:hover {
+  background-color: var(--firstbrown);
+  border-radius: 8px;
+  padding: 1%;
+  letter-spacing: 0.2rem;
+}
+
+/*-----------------------------------Body-----------------------*/
+
+.legend {
+  align-self: flex-start;
+  display: flex;
+  border: solid;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  padding: 1%;
+  padding-left: 2%;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 8px;
+  background-color: var(--GoldOnline);
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  padding: 2%;
+  text-align: left;
+  word-spacing: 2px;
+  gap: 12px;
+}
+
+.category {
+  border-radius: 8px;
+  border: solid;
+  padding: 2%;
+  font-weight: bold;
+  background-image: url(https://images.unsplash.com/photo-1612690119274-8819a81c13a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+}
+
+.description {
+  padding: 1%;
+}
+.zalety {
+  padding-left: 5%;
+}
+h4 {
+  padding-left: 2%;
+  color: var(--seconfbrown);
+  font-weight: bold;
+  margin-top: 15px;
+}
+h2 {
+  color: var(--firstbrown);
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px 8px 0 0;
+  background: var(--firstbrown);
+  padding-left: 1%;
+  padding-top: 1%;
+  font-size: 125%;
+  color: white;
+}
+.footer > p > a {
+  color: white;
+}
+.logoFooter {
+  width: 50%;
+}
+
+.CzymTo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  margin-top: 5%;
+}
+/*------------------media query--------------------*/
+
+@media screen and (max-width: 1050px) {
+  .menu_icon {
+    display: contents;
+  }
+  .menu_header {
+    display: none;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    gap: 50px;
+  }
+
+  .map {
+    margin-top: 2%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo_img {
+    width: 50%;
+  }
+}

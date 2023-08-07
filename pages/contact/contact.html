@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../../CSS/contact.css" />
+    <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+Display:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../../img/Logotyp_mini.png" />
+  </head>
+  <body>
+    <!------------------------------Header----------------------------------------->
+    <div class="header">
+      <div class="logo">
+        <img class="logo_img" src="../../img/Logotyp_mini.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul class="no-bullets wrap menu_header">
+          <li><a href="../../index.html">Greetings</a></li>
+          <li>
+            <a href="../home/home.html"><i class="bx bx-home"></i></a>
+          </li>
+          <li><a href="../price/price.html">Prices</a></li>
+          <li><a href="../Description/traitement.html">Description</a></li>
+          <li><a href="../aboutMe/AboutUs.html">About</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="min_ecran">
+          <li>
+            <a href="#home"><i class="bx bx-home"></i></a>
+          </li>
+          <li>
+            <a href="../price/price.html"
+              ><i class="bx bx-purchase-tag-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#gallery"><i class="bx bx-photo-album"></i></a>
+          </li>
+          <!-- <li><a href="#about">O mnie</a></li>-->
+          <li>
+            <a href="../contact/contact.html"><i class="bx bxs-contact"></i></a>
+          </li>
+        </ul>
+        <div class="menu_icon">
+          <i class="bx bx-menu bx-lg" id="menu-btn"></i>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Nav-bar----------------------------------------->
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="../../index.html">Greetings</a>
+      <a href="../home/home.html" class="random"><i class="bx bx-home"></i></a>
+      <a href="../price/price.html" class="random">Prices</a>
+      <a href="../Description/traitement.html">Description</a>
+      <li><a href="../aboutMe/AboutUs.html">About</a></li>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <!---------------------------------Body------------------------------>
+
+    <h1>Kontakt</h1>
+
+    <div class="contact">
+      <div class="mail" type="email">
+        <h3>Email</h3>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:jorammumb.mk@gmail.com">
+            jorammumb.mk@gmail.com</a
+          >
+        </p>
+      </div>
+
+      <div class="number">
+        <h3>Numer</h3>
+        <span>
+          <p>
+            <i class="fas fa-phone"></i
+            ><a href="tel:+48451572604"> 481-572-604</a>
+          </p>
+        </span>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <h1>Forms</h1>
+          <form action="contact.php" method="post">
+            <div class="formbold-input-flex">
+              <div>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Jan"
+                  class="formbold-form-input"
+                />
+                <label for="firstname" class="formbold-form-label">
+                First Name
+                </label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Kowalski"
+                  class="formbold-form-input"
+                />
+                <label for="lastname" class="formbold-form-label">
+                  Last Name
+                </label>
+              </div>
+            </div>
+
+            <div class="formbold-input-flex">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="janKowalski@xxx.com"
+                  class="formbold-form-input"
+                />
+                <label for="email" class="formbold-form-label"> Mail </label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="+48 451 572 604"
+                  class="formbold-form-input"
+                />
+                <label for="phone" class="formbold-form-label"> Phone </label>
+              </div>
+            </div>
+
+            <div class="formbold-textarea">
+              <textarea
+                rows="10"
+                name="message"
+                id="message"
+                placeholder="Write your message ..."
+                class="formbold-form-input"
+              ></textarea>
+              <label for="message" class="formbold-form-label"> Message </label>
+            </div>
+
+            <button class="formbold-btn" name="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="wrapper" data-configuration="1" data-roundness="1">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logoFooter">
+        <img class="logo_img" src="../../img/Logotyp_mini.png" alt="" />
+      </div>
+      <p>Copyright © 2011 - 2023 Beauty Barby</p>
+      <p>Developed by <a href="https://github.com/Joki004">Joki</a></p>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="../../Javascript/other.js"></script>
+  </body>
+</html>

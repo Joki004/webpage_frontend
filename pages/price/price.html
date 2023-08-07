@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cennik</title>
+    <link rel="icon" type="image/png" href="../../img/Logotyp_mini.png" />
+    <link rel="stylesheet" href="../../CSS/price.css" />
+    <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+Display:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------------------------Header----------------------------------------->
+    <div class="header">
+      <div class="logo">
+        <img class="logo_img" src="../../img/Logotyp_mini.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul class="no-bullets wrap menu_header">
+          <li><a href="../../index.html">Greetings</a></li>
+          <li>
+            <a href="../home/home.html"><i class="bx bx-home"></i></a>
+          </li>
+          <li><a href="../price/price.html">Prices</a></li>
+          <li><a href="../Description/traitement.html">Description</a></li>
+          <!-- <li><a href="#about">O mnie</a></li>-->
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="min_ecran">
+          <li>
+            <a href="../home/home.html"><i class="bx bx-home"></i></a>
+          </li>
+          <li>
+            <a href="../price/price.html"
+              ><i class="bx bx-purchase-tag-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#gallery"><i class="bx bx-photo-album"></i></a>
+          </li>
+           <li><a href="../aboutMe/AboutUs.html">About me</a></li>
+          <li>
+            <a href="../contact/contact.html"><i class="bx bxs-contact"></i></a>
+          </li>
+        </ul>
+        <div class="menu_icon">
+          <i class="bx bx-menu bx-lg" id="menu-btn"></i>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------Nav-bar----------------------------------------->
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="../../index.html">Greetings</a>
+      <a href="../home/home.html" class="random"><i class="bx bx-home"></i></a>
+      <a href="../price/price.html" class="random">Prices</a>
+      <a href="../Description/traitement.html">Description</a>
+      <li><a href="../aboutMe/AboutUs.html">About me</a></li>
+      <a href="../contact/contact.html">Contact</a>
+    </nav>
+    <!---------------------------------Body------------------------------>
+
+    <h1><strong>Prices</strong></h1>
+
+    <section class="price">
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Nitkowanie')">
+          Threading
+        </div>
+        <div class="box Nitkowanie">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Nitkowanie brwi, masaż, konsultacja</div>
+            <div class="priceProduct">35,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">
+              Nitkowanie, barwienie, masaż, konsultacja
+            </div>
+            <div class="priceProduct">50,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">
+              Nitkowanie, henna pudrowa - organiczna, geometria
+            </div>
+            <div class="priceProduct">85,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">Nitkowanie górnej wargi</div>
+            <div class="priceProduct">25,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">Nitkowanie brody</div>
+            <div class="priceProduct">25,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">Nitkowanie policzków</div>
+            <div class="priceProduct">39,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">Nitkowanie brwi, górnej wargi i brody</div>
+            <div class="priceProduct">70,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Barwanie')">
+          Dyeing
+        </div>
+        <div class="box Barwanie">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Barwienie farbką</div>
+            <div class="priceProduct">25,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Barwienie henna pudrowa - organiczna</div>
+            <div class="priceProduct">65,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Laminacja')">
+          Lamination
+        </div>
+        <div class="box Laminacja">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Laminacja brwi z nitkowieniem</div>
+            <div class="priceProduct">155,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">
+              Laminacja brwi z barwieniem i nitkowieniem
+            </div>
+            <div class="priceProduct">175,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Laminowanie brwi</div>
+            <div class="priceProduct">105,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Laminowanie brwi z barwieniem</div>
+            <div class="priceProduct">125,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('lifting')">lifting</div>
+        <div class="box lifting">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Lifting rzęs z keratyną</div>
+            <div class="priceProduct">105,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Lifting rzęs z keratyną i barwieniem</div>
+            <div class="priceProduct">125,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">
+              Lifting rzęs z barwieniem, botoxem i keratyną
+            </div>
+            <div class="priceProduct">145,00 zl</div>
+          </div>
+
+          <div class="products">
+            <div class="nameproduct">
+              Lifting rzęs z barwieniem, botoxem ,keratyną i laminacja brwi
+            </div>
+            <div class="priceProduct">175,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Opalanie')">
+          Sunbathing
+        </div>
+        <div class="box Opalanie">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Opalanie natryskowe całe ciało</div>
+            <div class="priceProduct">130,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Opalanie natryskowe polowe ciało</div>
+            <div class="priceProduct">70,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Makijaz')">Makeup</div>
+        <div class="box Makijaz">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Makijaż dzienny</div>
+            <div class="priceProduct">120,00 zl</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Makijaż wieczorowy</div>
+            <div class="priceProduct">180,00 zl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceCategory">
+        <div class="titlePrice" onclick="priceDisplay('Jonoforeza')">
+          Iontophoresis
+        </div>
+        <div class="box Jonoforeza">
+          <div class="products">
+            <div class="nameproducthead">Services</div>
+            <div class="priceProducthead">Prices</div>
+          </div>
+          <div class="products">
+            <div class="nameproduct">Jonoforeza dłonie/stopy</div>
+            <div class="priceProduct">45,00 zl</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="logoFooter">
+        <img class="logo_img" src="../../img/Logotyp_mini.png" alt="" />
+      </div>
+      <p>Copyright © 2011 - 2023 Beauty Barby </p>
+      <p>Developed by <a href="https://github.com/Joki004">Joki</a></p>
+    </div>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="../../Javascript/other.js"></script>
+  </body>
+</html>

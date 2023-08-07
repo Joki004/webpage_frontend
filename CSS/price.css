@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: 'Noto Serif Display', serif,'Dancing Script', cursive,"Poppins", sans-serif,"Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 1000;
+}
+:root {
+  --firstbrown: #331e1d;
+  --seconfbrown: #976240;
+  --GOld: #f6e2ad;
+  --GoldOnline: #e4c05a;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--GoldOnline);
+}
+
+body,
+.body {
+  width: 99.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*--overflow-x: hidden;--*/
+  padding: 0;
+  gap: 7%;
+}
+/*-------------------Header-------------------------------*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+  height: 100%;
+  align-items: center;
+  background-color: var(--firstbrown);
+  padding: 1% 1.5% 1.5% 1.5%;
+
+  margin-right: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo_img {
+  width: 10%;
+  height: 100%;
+  background-color: var(--firstbrown);
+  border-radius: 5%;
+  border: var(--GoldOnline) solid;
+}
+
+.logo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.menu {
+  width: 80%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  padding: 2%;
+  gap: 8%;
+  font-size: 140%;
+}
+.min_ecran {
+  display: none;
+}
+.menu_header > li > a {
+  text-decoration: none;
+  color: white;
+}
+.menu_header > li {
+  padding: 0.5%;
+}
+
+.menu_header > li:hover {
+  border: solid 1px;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+/*----------------------nav-bar--------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -120%;
+  z-index: 1010;
+  height: 100%;
+  width: 85%;
+  background: url(../img/navbar-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-right: 15%;
+}
+
+.navbar.active {
+  left: 0;
+}
+
+.navbar #close-navbar {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background: #fff;
+  color: var(--firstbrown);
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.navbar #close-navbar:hover {
+  color: var(--GoldOnline);
+  background: var(--firstbrown);
+}
+
+.navbar a {
+  font-size: 210%;
+  text-transform: uppercase;
+  color: var(--GoldOnline);
+  font-weight: lighter;
+}
+
+.navbar a:hover {
+  background-color: var(--firstbrown);
+  border-radius: 8px;
+  padding: 1%;
+  letter-spacing: 0.2rem;
+}
+
+/*-----------------------Body------------------*/
+
+h1 {
+  font-size: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------------Price-----------------------*/
+.price {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 10px;
+}
+
+.priceCategory {
+  display: flex;
+  width: 98%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 1%;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  gap: 5px;
+  padding: 5px;
+}
+
+.nameproduct,
+.priceProduct {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid;
+  width: 19%;
+  padding-left: 1%;
+  font-size: 15px;
+}
+.priceProduct {
+  justify-content: center;
+}
+.nameproducthead,
+.priceProducthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+
+  width: 19%;
+  padding-left: 1%;
+  background-color: var(--firstbrown);
+  color: var(--GoldOnline);
+}
+.nameproducthead {
+  width: 80%;
+}
+.nameproduct {
+  width: 80%;
+}
+
+.titlePrice {
+  border-top: 1px solid var(--firstbrown);
+  color: black;
+  display: block;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  border-radius: 8px;
+  border: solid;
+}
+.box {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nitkowanie,
+.Barwanie,
+.Laminowanie,
+.Laminacja,
+.lifting,
+.Opalanie,
+.Makijaz,
+.Jonoforeza {
+  display: none;
+}
+.titlePrice:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.titlePrice:hover:before {
+  transition: width 600ms ease;
+  width: 100%;
+}
+.titlePrice:before {
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--firstbrown) var(--bggradient),
+    var(--GoldOnline)
+  );
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1%;
+  position: absolute;
+}
+
+.titlePrice::nth-child(3) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*-------------------------------------------------*/
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px 8px 0 0;
+  background: var(--firstbrown);
+  padding-left: 1%;
+  padding-top: 1%;
+  gap: 8px;
+}
+
+.logoFooter {
+  width: 50%;
+}
+.footer>p{
+  color: white;
+  margin-left: 1%;
+}
+.footer>p>a{
+  color: white;
+  margin-left: 1%;
+}
+/*------------------media query--------------------*/
+
+@media screen and (max-width: 1050px) {
+  .menu_icon {
+    display: contents;
+  }
+  .menu_header {
+    display: none;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    gap: 50px;
+  }
+
+  .map {
+    margin-top: 2%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nameproducthead,
+  .priceProducthead {
+    font-size: 100%;
+  }
+
+  .logo_img {
+    width: 50%;
+  }
+}
