@@ -16,7 +16,7 @@ Getting Started
 Clone this repository to your local machine using:
 
 
-git clone https://github.com/joki_004/your-repo.git
+git clone git@github.com:Joki004/webpage_frontend.git
 Open the index.html file in your web browser to view the webpage.
 
 Explore the different sections of the webpage to see how HTML, CSS, and JavaScript work together to create a cohesive user interface.
